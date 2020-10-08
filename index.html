@@ -55,7 +55,7 @@
                             <label for="phoneNumber" class="formLabel">Phone Number</label><br>
                             <div class="input-container">
                                 <i class="fa fa-phone icon"></i>
-                                <input type="tel" id="demo" name="phone" placeholder="1234567890" class="formInput">
+                                <input type="tel" id="demo" name="phone" placeholder="1234567890" class="formInput" id="telephone">
                             </div>
                         </td>
                     </tr>
@@ -104,5 +104,28 @@
             </form>
         </div>
     </div>
+    <script>
+        var input = document.querySelector("#telephone");
+
+        // JavaScript
+
+        window.intlTelInput(input, ({
+            allowDropdown: true,
+            autoHideDialCode: true,
+            autoPlaceholder: "polite"
+
+        }));
+
+        // jQuery
+
+        $("#telephone").intlTelInput({
+            allowDropdown: true,
+            autoHideDialCode: true,
+            autoPlaceholder: "polite"
+        });
+    </script>
+    <script src="build/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="build/js/intlTelInput-jquery.min.js"></script>
     <script src="contactUs.js" charset="utf-8"></script>
 </body></html>
