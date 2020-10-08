@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+}
+
+p {
+    color: #8f8f8f;
+    font-size: 1rem;
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+.contactUsButton {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 50px;
+    margin-top: 20%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.mainHeading {
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.mainDiv {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contactUsTable {
+    width: 70%;
+    text-align: left;
+}
+
+.tableDivision12 {
+    line-height: 1.5rem;
+}
+
+.formInput {
+    width: 400px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #8f8f8f;
+    padding-left: 2%;
+    font-size: 1.2rem;
+}
+
+.rocDivision {
+    width: 500px;
+}
+
+.submitButton {
+    text-align: center;
+    background-color: #e4cbb2;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 20%;
+}
+
+.button {
+    text-align: center;
+}
+
+.tableDivisionTextArea {
+    border-radius: 10px;
+}
+
+.select-box {
+    width: 950px;
+    position: relative;
+}
+
+.select-box select {
+    height: 42px;
+    padding: 10px 15px;
+    line-height: 22px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 8px;
+    -webkibox-appearance: none;
+    background-color: #fff;
+}
+
+.select-box::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -4px;
+    border-top: 8px solid black;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+}
+
+.select-box select:focus {
+    border: 2px solid green;
+}
+
+.input-container {
+    display: flex;
+}
+
+.icon {
+    padding: 15px;
+    background: #fff;
+    color: #8f8f8f;
+    min-width: 50px;
+    text-align: center;
+    border: 1px solid #8f8f8f;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+.formLabel {
+    font-size: 1.5rem;
+    color: #8f8f8f;
+}
+
+.secondaryHead {
+    color: #8f8f8f;
+}
+
+.messageDivision {
+    border: 1px solid #000;
+    padding: 2% 0% 0% 1%;
+}
+
+.attachmentDivision {
+    border-radius: 0px 10px 10px 0px;
+    padding-left: 2%;
+}
+
+.charCount {
+    padding-bottom: 3%;
+}
+
+.tableDivision {
+    line-height: 1.5rem;
+    padding-bottom: 3%;
+}
+
+placeholder {
+    padding: 400px;
+}
+
+.mainIcon {
+    padding: 30px 10px;
+    background: #8f8f8f;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-right: none;
+    border-radius: 50%;
+    font-size: 60px;
+}
+
+.popUpContent {
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    height: 1000px;
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid #000;    
+}
+
+.close {
+    position: absolute;
+    width: 2rem;
+    border-radius: 50%;
+    right: 1px;
+    top: 1px;
+    background-color: #fff; 
+    cursor: pointer;
+}

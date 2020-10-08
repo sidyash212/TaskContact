@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-----------FontAwesome------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <button type="button" class="contactUsButton" id="buttonMain">Contact Us</button>
+
+    <div class="mainDiv">
+        <div class="popUpContent">
+            <img src="closeimg.png" alt="Close" class="close">
+            <i class="fa fa-headphones fa-lg mainIcon" aria-hidden="true"></i>
+
+            <header class="mainHeading">
+                <h1 class="heading">Contact Us</h1>
+                <h2 class="heading secondaryHead">Your Satisfaction is our Top Priority</h2>
+            </header>
+            <form action="" style="display: flex; justify-content: center;">
+                <table class="contactUsTable">
+                    <tr>
+                        <td class="tableDivision">
+                            <label for="firstName" class="formLabel">First Name</label><br>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" name="James" placeholder="James" class="formInput">
+                            </div>
+                        </td>
+                        <td class="tableDivision">
+                            <label for="lastName" class="formLabel">Last Name</label><br>
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" name="Grey" placeholder="Grey" class="formInput">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tableDivision">
+                            <label for="email" class="formLabel">Email</label><br>
+                            <div class="input-container">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" name="email" placeholder="ac@xyz.com" required class="formInput">
+                            </div>
+                        </td>
+                        <td class="tableDivision">
+                            <label for="phoneNumber" class="formLabel">Phone Number</label><br>
+                            <div class="input-container">
+                                <i class="fa fa-phone icon"></i>
+                                <input type="tel" id="demo" name="phone" placeholder="1234567890" class="formInput">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tableDivision">
+                            <label for="reasonOfContact" class="formLabel">Reason Of Contact</label><br>
+                            <div class="select-box">
+                                <select name="" required>
+                                    <option value="">Select a Reason</option>
+                                    <option value="">Cancel Order</option>
+                                    <option value="">Order/Shipping</option>
+                                    <option value="">Return/Exchange</option>
+                                    <option value="">Product</option>
+                                    <option value="">Price</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tableDivision12">
+                            <label for="reasonOfContact" class="formLabel">Message</label><br>
+                            <textarea name="ta" id="mDText" cols="119" rows="8" class="tableDivisionTextArea messageDivision" placeholder="Hello Support Team, Could you please let me know when I except my order?" onKeyDown="textCounter(this.form.ta,this.form.countDisplay);" onKeyUp="textCounter(this.form.ta,this.form.countDisplay);" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="charCount">
+                            <input readonly type="text" name="countDisplay" size="3" maxlength="3" value="250"> /
+                            <input readonly type="text" name="maxAmount" size="3" maxlength="3" value="250">
+                            Charaters Remaining
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tableDivision">
+                            <label for="reasonOfContact" class="formLabel">Attachment Link</label><br>
+                            <div class="input-container">
+                                <i class="fa fa-link icon"></i>
+                                <textarea name="attachmentLink" id="tDText" cols="112" rows="3" pattern="https://.*" class="attachmentDivision messageDivision" placeholder="You can upload files on your drive and pasted that link here"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tableDivision">
+                        <td colspan="2" class="button"><button type="submit" onclick='countwords()' class="submitButton">SUBMIT</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="contactUs.js" charset="utf-8"></script>
+</body></html>
