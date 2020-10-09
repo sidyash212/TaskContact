@@ -225,3 +225,11 @@ placeholder {
     background-color: #fff; 
     cursor: pointer;
 }
+
+.required::after{
+    content: " *";
+}
+
+
+
+
